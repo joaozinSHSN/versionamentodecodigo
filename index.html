@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>To-Do List</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Lista de Tarefas</h1>
+        <form id="taskForm">
+            <input type="text" id="taskInput" placeholder="Adicione uma nova tarefa" required>
+            <button id="addButton">Adicionar</button>
+        </form>
+        
+        <h2>Tarefas Pendentes</h2>
+        <ul id="taskList"></ul>
+
+        <h2>Instruções</h2>
+        <p>Use o campo acima para adicionar uma nova tarefa.</p>
+        <p>Clique em uma tarefa para marcá-la como concluída.</p>
+        <p>Use o botão "Editar" para modificar a tarefa.</p>
+        <p>As tarefas podem ser removidas a qualquer momento.</p>
+        <p>Você pode filtrar as tarefas usando o menu abaixo.</p>
+
+        <h2>Filtrar Tarefas</h2>
+        <select id="filterSelect">
+            <option value="all">Todas</option>
+            <option value="completed">Concluídas</option>
+            <option value="pending">Pendentes</option>
+        </select>
+
+        <h2>Estatísticas</h2>
+        <p id="taskStats">Total de Tarefas: 0</p>
+
+        <h2>Contato</h2>
+        <p>Para sugestões ou feedback, entre em contato: joao.l.cruz@iesb.edu.br</p>
+
+        <h2>Sobre este Projeto</h2>
+        <p>Esta é uma aplicação simples de lista de tarefas, desenvolvida para praticar habilidades em HTML, CSS e JavaScript.</p>
+        <p>Sinta-se à vontade para personalizar e expandir a funcionalidade.</p>
+
+        <footer>
+            <p>Desenvolvido por João Lucas</p>
+            <p>&copy; 2024 Todos os direitos reservados.</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
